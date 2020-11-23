@@ -11,9 +11,7 @@ def explore_stack():
     stack.append(Mate("Dan", 5))
     stack.append(Mate("Emile", 2))
 
-    while len(stack) > 0:
-        a = stack.pop()
-        print(a)
+    print(stack)
 
 
 def explore_queue():
@@ -24,9 +22,7 @@ def explore_queue():
     queue.append(Mate("Dan", 5))
     queue.append(Mate("Emile", 2))
 
-    while len(queue) > 0:
-        a = queue.pop(0)
-        print(a)
+    print(queue)
 
 
 def explore_sort():
@@ -49,27 +45,17 @@ def explore_priority_queue():
     bisect.insort(sorted_list, Mate("Dan", 5))
     bisect.insort(sorted_list, Mate("Emile", 2))
 
-    while len(sorted_list) > 0:
-        a = sorted_list.pop(0)
-        print(a)
+    print(sorted_list)
 
 
-def explore_update_value():
-    sorted_list = list()
-    bisect.insort(sorted_list, Mate("Alice", 1))
-    bisect.insort(sorted_list, Mate("Bob", 3))
-    bisect.insort(sorted_list, Mate("Cara", 6))
-    bisect.insort(sorted_list, Mate("Dan", 5))
-    bisect.insort(sorted_list, Mate("Emile", 2))
+def update_element(a_list, an_element):
+    """ Implement updating an element in a list using bisect.insort"""
+    pass
 
-    a = sorted_list[-1]
-    a.value = 4
-    # sorted_list.remove(a)
-    # bisect.insort(sorted_list,a)
 
-    while len(sorted_list) > 0:
-        a = sorted_list.pop(0)
-        print(a)
+def update_element_left(a_list, an_element):
+    """ Implement updating an element in a list using bisect.insort_left"""
+    pass
 
 
 if __name__ == "__main__":
